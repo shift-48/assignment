@@ -413,11 +413,11 @@ nav .logo img {
   width: 100%;
   height: 100%;
   opacity: 0.3;
-  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 #languages .language-box .lang-grid .lang-img img:hover {
   opacity: 1;
-  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 #blog {
@@ -587,6 +587,31 @@ nav .logo img {
 }
 #contact .contact-box .input-side button:hover {
   background: white;
+}
+
+#footer {
+  width: 100%;
+  border-top: 0.05rem solid rgba(187, 182, 204, 0.5);
+}
+#footer .footer-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .footer-container p {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+}
+#footer .footer-container .socials i {
+  color: white;
+  font-size: 2rem;
+  padding: 0.8rem;
+  margin-right: 1rem;
+}
+#footer .footer-container .socials i:hover {
+  color: #F71735;
 }
 
 @media (max-width: 1200px) {
