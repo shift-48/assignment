@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: .1rem dotted red;
+    transition: all linear .5s;
+}
+
+$main-color:#11151C;
+$red:#F71735;
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color:$red;
+    border-radius: .4rem;
+}
+
+body{
+    background-color: #11151C;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+@keyframes arrow {
+    0%{
+        top: 10px;
+        opacity: 1;
+    }
+    50%{
+        top: 30px;
+        opacity: 0.7;
+    }
+    100%{
+        top:50px;
+        opacity: 0;
+
+    }
+}
+
+@keyframes emoji {
+    0%{
+        
+        transform:rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}

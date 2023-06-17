@@ -1,0 +1,454 @@
+@import 'config';
+@import 'weird-btn';
+
+
+
+
+nav{
+    display: flex;
+    z-index: 100;
+    // background-color: green;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: .2rem solid rgba(187, 182, 204, 0.1);
+        .menu-btn{
+            i{
+                font-size: 2rem;
+                padding: .8rem;
+            }
+        }
+        .logo{
+            width: 20rem;
+            height: 5rem;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+    linear-gradient(90deg, rgba(17,21,28,0.99) 0%, rgba(17,21,28,0.8) 52%, rgba(187, 182, 204, 0.1) 100%),
+    url('../images/home-img.png');
+    background-repeat: no-repeat;
+        .details-container{
+            min-height: 35rem;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 70%;
+                .details{
+                    color: white;
+                        h1{
+                            font-weight: 800;
+                            font-size: 7rem;
+                            padding: 1rem;
+                            // animation: emoji 2s linear;
+                            // margin-bottom: 2rem;
+                                span{
+                                    -webkit-text-fill-color:initial;
+                                    // animation: emoji 2s linear;
+                                    
+                                }
+                                background: linear-gradient(to right, #ef3b36, #ffffff);
+                                background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                        }
+                       
+                    
+                }
+                .para{
+                    p{
+                        font-weight: 800;
+                        
+                        font-size: 3rem;
+                        padding: 1rem;
+                        background-image: linear-gradient(to right, #1c92d2, #f2fcfe); 
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                    }
+                }
+                .arrow-side{
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .weird-arrow-box{
+                        border: .1rem solid $red;
+                        position: relative;
+                        background-color: palegreen;
+                        border-radius: 50%;
+                        height: 10rem;
+                        width: 10rem;
+                            img{
+                                position: absolute;
+                                height: 5rem;
+                                top: 0;
+                                left: 3.5rem;
+                                animation: arrow 2s linear infinite;
+                            }
+                    }
+                    .view-projects-lnk{
+                        a{
+                            color: $red;
+                            text-decoration: none;
+                            padding: .8rem;
+                            font-weight: 700;
+                            font-size: 1.4rem;
+                                &:hover{
+                                    color: green;
+                                    
+                                }
+                        }
+                            
+                    }
+                }
+
+
+        }
+
+    
+
+}
+
+#about{
+    background-color: palevioletred;
+    width: 100vw;
+    height: 100%;
+        .about-container{
+            display: flex;
+            gap: 4rem;
+                .about-img-side{
+                    width: 40%;
+                    background-color: maroon;
+                        img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                }
+                .about-details-side{
+                    width: 60%;
+                    background-color: peru;
+                    cursor: pointer;
+                    padding: .8rem;
+                    display: flex;
+                    gap: 1rem;
+                    flex-direction: column;
+                        h1{
+                            font-size: 3rem;
+                            font-weight: 800;
+                            color: white;
+                        }
+                        .itachi{
+                            color: $red;
+                            font-weight: 800;
+                            line-height: 1.3;
+                            font-size: 1.2rem;
+                        
+                        }
+                        .name{
+                            color: $red;
+                            font-weight: 800;
+                            font-size: 1.3rem;
+
+                        }
+                        .naruto-facts{
+                            color: white;
+                                a{
+                                    text-decoration: none;
+                                    color: $red;
+                                    text-transform: capitalize;
+                                    font-weight: 700;
+                                }
+                        }
+                }
+        }
+        
+}
+
+
+#my-projects{
+    width: 100%;
+    min-width: 100%;
+    background-color: green;
+        .my-project-container{
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+                .heading{
+                    color: white;
+                        h1{
+                            font-size: 3rem;
+                            margin-bottom: 2rem;
+                        }
+                }
+                .project-box{
+                    background-color: #1c92d2;
+                    height: 80vh;
+                    display: flex;
+                    justify-content: space-between;
+                        .image-description{
+                            width: 45%;
+                            display: flex;
+                            flex-direction: column;
+                            // align-items: center;
+                            justify-content: center;
+                            padding: 0 5%;
+                            background-color: blue;
+                            gap: 1.5rem;
+                                h1{
+                                    color: white;
+                                    font-size: 2rem;
+                                    font-weight: 800;
+                                }
+                                p{
+                                    color: gray;
+                                    line-height: 1.5;
+                                }
+                                button{
+                                    width: 14rem;
+                                    height: 2rem;
+                                    border: none;
+                                    background: transparent;
+                                        a{
+                                            text-decoration: none;
+                                            font-size: 1.3rem;
+                                            color: $red;
+                                            margin-right: 1rem;
+                                        }
+                                        i{
+                                            color: $red;
+                                            font-size: 1.3rem;
+                                            
+                                        }
+                                        &:hover i{
+                                            transform: translateX(1rem);
+                                        }
+                                }
+                        }
+                        .img-sides{
+                            width: 50%;
+                            background-color: #ef3b36;
+                            overflow: hidden;
+                                img{
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                &:hover img{
+                                    transform: scale(1.2);
+                                }
+                        }
+    
+            }
+        }
+       
+}
+
+
+#languages{
+    width: 100%;
+    min-width: 100%;
+    // background-color: violet;
+        .language-box{
+            padding: 2rem;
+                // background-color: gold;
+                display: flex;
+                gap: 4rem;
+                flex-direction: column;
+                    .heading{
+                        color: white;
+                            h1{
+                                font-size: 3rem;
+                                margin-bottom: 2rem;
+                            }
+                    }
+                    .p{
+                        color: white;
+                        line-height: 2;
+                        font-weight: 700;
+                        margin-bottom: 2rem;
+                        
+                    }
+                    .lang-grid{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+                        gap: 2rem;
+                            .lang-img{
+                                height: 9rem;
+                                background-color: transparent;
+                                img{
+                                    object-fit: contain;
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0.3;
+                                    -webkit-filter:grayscale(1);
+                                        &:hover{
+                                            opacity: 1;
+                                            -webkit-filter:grayscale(0);
+                                        }
+                                }
+                            }
+                    }
+        }
+}
+
+
+#blog{
+    width: 100%;
+    min-width: 100%;
+    // background-color: violet;
+        .blog-box{
+            padding: 2rem;
+                // background-color: gold;
+                display: flex;
+                // gap: 4rem;
+                flex-direction: column;
+                    .heading{
+                        color: white;
+                            h1{
+                                font-size: 3rem;
+                                margin-bottom: 2rem;
+                            }
+                    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+    body{
+        background-color: pink;
+    }
+ 
+ }
+@media (max-width:992px){
+
+    
+    body{
+        background-color: magenta;
+    }
+ 
+ }
+@media (max-width:768px){
+
+    
+    body{
+        background-color: palegreen;
+    }
+
+ 
+ }
+@media (max-width:567px){
+
+    body{
+        background-color: red;
+    }
+
+ }
