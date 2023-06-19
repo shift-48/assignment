@@ -5,8 +5,7 @@
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  outline: 0.1rem dotted red;
-  transition: all linear 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 html {
@@ -213,6 +212,8 @@ nav .logo img {
 }
 #main .details-container .details h1 span {
   -webkit-text-fill-color: initial;
+  -webkit-animation: emoji 2s linear;
+          animation: emoji 2s linear;
 }
 #main .details-container .para p {
   font-weight: 800;
@@ -591,9 +592,9 @@ nav .logo img {
 
 #footer {
   width: 100%;
-  border-top: 0.05rem solid rgba(187, 182, 204, 0.5);
 }
 #footer .footer-container {
+  border-top: 0.05rem solid rgba(187, 182, 204, 0.5);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -601,7 +602,7 @@ nav .logo img {
 }
 #footer .footer-container p {
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
 }
 #footer .footer-container .socials i {

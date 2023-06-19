@@ -61,7 +61,7 @@ nav{
                             // margin-bottom: 2rem;
                                 span{
                                     -webkit-text-fill-color:initial;
-                                    // animation: emoji 2s linear;
+                                    animation: emoji 2s linear;
                                     
                                 }
                                 background: linear-gradient(to right, #ef3b36, #ffffff);
@@ -495,15 +495,16 @@ nav{
 
 #footer{
     width: 100%;
-    border-top: .05rem solid rgba(187, 182, 204, 0.5);
+    
         .footer-container{
+            border-top: .05rem solid rgba(187, 182, 204, 0.5);
             padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
                 p{
                     font-weight: 800;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     color: white;
                 }
                 .socials{
