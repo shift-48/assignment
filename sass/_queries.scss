@@ -1,0 +1,64 @@
+
+
+
+@media (max-width:1200px){
+
+    body{
+        background-color: pink;
+    }
+ 
+ }
+@media (max-width:992px){
+    nav{
+        justify-content: space-between;
+        padding: 0 2%;
+    }
+    section{
+        padding: 9rem 2%;
+    }
+
+    html{
+        font-size: 80%;
+    }
+    .email-name{
+        flex-direction: column;
+    }
+    body{
+        background-color: magenta;
+    }
+ 
+ }
+@media (max-width:768px){
+
+    
+    body{
+        background-color: palegreen;
+    }
+    .contact-box{
+        flex-direction: column;
+    }
+
+ 
+ }
+@media (max-width:567px){
+
+    body{
+        background-color: red;
+    }
+    
+       html{
+        font-size: 60%;
+      
+    }
+    .about-container{
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+
+    .project-box{
+        flex-direction: column;
+    }
+
+    
+ }

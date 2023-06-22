@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-transform: capitalize;
-    // outline: .1rem dotted red;
+    outline: .1rem dotted red;
     transition: all ease-in .5s;
 }
 
@@ -60,18 +60,23 @@ section{
     0%{
         
         transform:rotate(0deg);
+        
     }
     25%{
         transform: rotate(45deg);
+        
     }
     50%{
         transform: rotate(90deg);
+       
     }
 
     75%{
         transform: rotate(45deg);
+        
     }
     100%{
         transform: rotate(0deg);
+ 
     }
 }
