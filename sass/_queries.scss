@@ -9,6 +9,10 @@
  
  }
 @media (max-width:992px){
+    html{
+        font-size: 80%;
+    }
+
     nav{
         justify-content: space-between;
         padding: 0 2%;
@@ -17,9 +21,6 @@
         padding: 9rem 2%;
     }
 
-    html{
-        font-size: 80%;
-    }
     .email-name{
         flex-direction: column;
     }
@@ -29,36 +30,40 @@
  
  }
 @media (max-width:768px){
-
+   
     
     body{
+        
         background-color: palegreen;
     }
-    .contact-box{
-        flex-direction: column;
-    }
+    
 
  
  }
 @media (max-width:567px){
 
+    html{
+        font-size: 60%;
+      
+    }
+
     body{
         background-color: red;
     }
     
-       html{
-        font-size: 60%;
-      
-    }
+    
     .about-container{
         flex-direction: column;
         // justify-content: center;
-        align-items: center;
+        align-items:center;
     }
 
     .project-box{
         flex-direction: column;
     }
 
+    .contact-box{
+        flex-direction: column;
+    }
     
  }

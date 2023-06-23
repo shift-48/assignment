@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  outline: 0.1rem dotted red;
   transition: all ease-in 0.5s;
 }
 
@@ -39,30 +38,46 @@ section {
 
 @-webkit-keyframes arrow {
   0% {
-    top: 10px;
+    top: 0px;
     opacity: 1;
   }
+  25% {
+    top: 20px;
+    opacity: 0.8;
+  }
   50% {
-    top: 30px;
-    opacity: 0.7;
+    top: 40px;
+    opacity: 0.6;
+  }
+  75% {
+    top: 60px;
+    opacity: 0.4;
   }
   100% {
-    top: 50px;
+    top: 80px;
     opacity: 0;
   }
 }
 
 @keyframes arrow {
   0% {
-    top: 10px;
+    top: 0px;
     opacity: 1;
   }
+  25% {
+    top: 20px;
+    opacity: 0.8;
+  }
   50% {
-    top: 30px;
-    opacity: 0.7;
+    top: 40px;
+    opacity: 0.6;
+  }
+  75% {
+    top: 60px;
+    opacity: 0.4;
   }
   100% {
-    top: 50px;
+    top: 80px;
     opacity: 0;
   }
 }
@@ -160,15 +175,15 @@ section {
   }
 }
 @media (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
   nav {
     justify-content: space-between;
     padding: 0 2%;
   }
   section {
     padding: 9rem 2%;
-  }
-  html {
-    font-size: 80%;
   }
   .email-name {
     flex-direction: column;
@@ -181,22 +196,22 @@ section {
   body {
     background-color: palegreen;
   }
-  .contact-box {
-    flex-direction: column;
-  }
 }
 @media (max-width: 567px) {
-  body {
-    background-color: red;
-  }
   html {
     font-size: 60%;
+  }
+  body {
+    background-color: red;
   }
   .about-container {
     flex-direction: column;
     align-items: center;
   }
   .project-box {
+    flex-direction: column;
+  }
+  .contact-box {
     flex-direction: column;
   }
 }
@@ -212,7 +227,7 @@ nav {
   border-bottom: 0.2rem solid rgba(187, 182, 204, 0.1);
 }
 nav .menu-btn i {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.8rem;
 }
 nav .logo {
@@ -275,23 +290,22 @@ nav .logo img {
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 3rem;
 }
 #main .details-container .arrow-side .weird-arrow-box {
-  border: 0.1rem solid #F71735;
+  border: 0.01rem solid #F71735;
   position: relative;
   border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
-  transform: rotate(-10deg);
+  height: 7rem;
+  width: 7rem;
 }
 #main .details-container .arrow-side .weird-arrow-box i {
   position: absolute;
-  height: 5rem;
+  height: 8rem;
   top: 0;
-  left: 3.5rem;
-  -webkit-animation: arrow 2s linear infinite;
-          animation: arrow 2s linear infinite;
+  left: 2.6rem;
+  -webkit-animation: arrow 1s linear infinite;
+          animation: arrow 1s linear infinite;
   font-size: 2rem;
   color: #F71735;
 }
@@ -371,7 +385,6 @@ nav .logo img {
   margin-bottom: 2rem;
 }
 #my-projects .my-project-container .project-box {
-  background-color: #1c92d2;
   height: 80vh;
   display: flex;
   justify-content: space-between;
@@ -547,7 +560,6 @@ nav .logo img {
 }
 #contact .contact-box {
   display: flex;
-  gap: 1rem;
   gap: 5rem;
 }
 #contact .contact-box .message-side {
@@ -558,14 +570,15 @@ nav .logo img {
 }
 #contact .contact-box .message-side .message-upper {
   display: flex;
-  justify-content: space-between;
 }
 #contact .contact-box .message-side .message-upper h1 {
   font-size: 5rem;
   color: white;
+  width: 50%;
 }
 #contact .contact-box .message-side .message-upper div {
   font-size: 4rem;
+  width: 50%;
   -webkit-animation: emoji 1.3s linear infinite;
           animation: emoji 1.3s linear infinite;
 }
@@ -575,7 +588,7 @@ nav .logo img {
   line-height: 1.5;
 }
 #contact .contact-box .input-side {
-  min-width: 60%;
+  min-width: 55%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -633,11 +646,8 @@ nav .logo img {
   text-decoration: none;
   color: white;
 }
-#contact .contact-box .input-side button a:hover {
-  color: black;
-}
-#contact .contact-box .input-side button:hover {
-  background: white;
+#contact .contact-box .input-side button:hover * a {
+  background: brwon;
 }
 
 #footer {

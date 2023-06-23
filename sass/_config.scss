@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-transform: capitalize;
-    outline: .1rem dotted red;
+    // outline: .1rem dotted red;
     transition: all ease-in .5s;
 }
 
@@ -42,15 +42,23 @@ section{
 
 @keyframes arrow {
     0%{
-        top: 10px;
+        top: 0px;
         opacity: 1;
     }
+    25%{
+        top: 20px;
+        opacity:0.8 ;
+    }
     50%{
-        top: 30px;
-        opacity: 0.7;
+        top: 40px;
+        opacity: 0.6;
+    }
+    75%{
+        top: 60px;
+        opacity: 0.4;
     }
     100%{
-        top:50px;
+        top:80px;
         opacity: 0;
 
     }
@@ -63,6 +71,7 @@ section{
         
     }
     25%{
+        
         transform: rotate(45deg);
         
     }
