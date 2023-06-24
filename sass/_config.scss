@@ -1,91 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
-*{
-    font-family: 'Comfortaa', cursive;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
-    // outline: .1rem dotted red;
-    transition: all ease-in .5s;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  // outline: .1rem dotted red;
+  transition: all ease-in 0.5s;
 }
 
-$main-color:#11151C;
-$red:#F71735;
+$main-color: #11151c;
+$red: #f71735;
 
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
-    width: .5rem;
+html::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-html::-webkit-scrollbar-track{
-    background-color: transparent;
+html::-webkit-scrollbar-track {
+  background-color: transparent;
 }
-html::-webkit-scrollbar-thumb{
-    background-color:$red;
-    border-radius: .4rem;
-}
-
-body{
-    background-color: #11151C;
-    min-height: 100vh;
-    width: 100%;
-    
+html::-webkit-scrollbar-thumb {
+  background-color: $red;
+  border-radius: 0.4rem;
 }
 
-section{
-    padding: 5rem 9%;
+body {
+  background-color: #11151c;
+  min-height: 100vh;
+  width: 100%;
+}
+
+section {
+  padding: 5rem 9%;
 }
 
 @keyframes arrow {
-    0%{
-        top: 0px;
-        opacity: 1;
-    }
-    25%{
-        top: 20px;
-        opacity:0.8 ;
-    }
-    50%{
-        top: 40px;
-        opacity: 0.6;
-    }
-    75%{
-        top: 60px;
-        opacity: 0.4;
-    }
-    100%{
-        top:80px;
-        opacity: 0;
-
-    }
+  0% {
+    top: 0px;
+    opacity: 1;
+  }
+  // 25%{
+  //     top: 20px;
+  //     opacity:0.8 ;
+  // }
+  50% {
+    top: 40px;
+    opacity: 0.6;
+  }
+  // 75%{
+  //     top: 60px;
+  //     opacity: 0.4;
+  // }
+  100% {
+    top: 70px;
+    opacity: 0;
+  }
 }
 
 @keyframes emoji {
-    0%{
-        
-        transform:rotate(0deg);
-        
-    }
-    25%{
-        
-        transform: rotate(45deg);
-        
-    }
-    50%{
-        transform: rotate(90deg);
-       
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
 
-    75%{
-        transform: rotate(45deg);
-        
-    }
-    100%{
-        transform: rotate(0deg);
- 
-    }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

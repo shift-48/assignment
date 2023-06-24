@@ -36,7 +36,7 @@
         
         background-color: palegreen;
     }
-    
+
 
  
  }
@@ -50,6 +50,13 @@
     body{
         background-color: red;
     }
+    .lang-grid{
+        grid-template-columns: 100px 100px;
+        grid-template-rows: repeat(100px)
+    }
+    .my-project-container{
+        gap:1rem;
+    }
     
     
     .about-container{
@@ -60,10 +67,20 @@
 
     .project-box{
         flex-direction: column;
+        gap: 2rem;
     }
 
     .contact-box{
         flex-direction: column;
     }
     
+ }
+ @media (max-width:150px ){
+    body{
+        background-color: yellow;
+    
+    }
+    html{
+        font-size: 20%;
+    }
  }
